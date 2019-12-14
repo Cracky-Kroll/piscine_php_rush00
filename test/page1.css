@@ -1,0 +1,128 @@
+
+body
+{
+    background-color: rgb(228, 185, 106);
+}
+
+nav ul li
+{
+    float:left;
+    position:relative;
+    list-style-type: none;
+}
+
+nav
+{
+    width: 100%;
+    background-color: #58424d;
+}
+nav ::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav a
+{
+    display: inline-block;
+    
+}
+nav ul li a
+{
+    padding: 20px 30px;
+    color: white;
+}
+.classique
+{
+    display: none;
+}
+nav li:hover .classique
+{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000000;
+}
+.classique li
+{
+    border-bottom: 1px solid #CCC;
+}
+.classique li a
+{
+    padding: 15px 30px;
+    font-size: 13px;
+    width: 270px;
+}
+.salade:hover
+{
+    border-top: 5px;
+    background-color: #4e0352;
+}
+.sandwich:hover
+{
+    border-top: 5px ;
+    background-color:#7d0053;
+}
+.chauds:hover
+{
+    border-top: 5px ;
+    background-color: #074955;
+}
+.pizza:hover
+{
+    border-top: 5px;
+    background-color:#522323 ;
+    
+}
+.dessert:hover
+{
+    border-top: 5px;
+    background-color: #220233;
+}
+nav ul li:hover a
+{
+    padding: 15px 30px 20px 30px;
+}
+.salade .classique
+{
+    background-color: #4e0352;
+}
+.sandwich .classique
+{
+    background-color: #7d0053;
+}
+.chauds .classique
+{
+    background-color:#078c9e;
+}
+.pizza .classique
+{
+    background-color:#752641;
+}
+.dessert .classique
+{
+    background-color: #220233;
+}
+.classique li:hover a 
+{
+    color:#EEE;
+    font-weight: bold;
+}
+.salade .classique li:hover
+{
+    background-color: #743213;
+}
+.sandwich .classique li:hover
+{
+    background-color: #014b70;
+}
+.chauds .classique li:hover
+{
+    background-color: #74632d;
+}
+.pizza .classique li:hover
+{
+    background-color: #522323;
+}
