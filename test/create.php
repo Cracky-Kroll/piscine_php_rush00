@@ -8,8 +8,8 @@
     	else
         	echo $ERROR;
 	}
-	$path = "../private/";
-	$file = $path."passwd";
+	$path = "private/";
+	$file = $path."user";
 	if ($_POST['login'] != NULL && $_POST['passwd'] != NULL && $_POST['submit'] == "OK"){
     	if (!file_exists($path))
         	mkdir($path);

@@ -1,7 +1,7 @@
 <?php
 	function auth($login, $passwd){
-	$path = "../private/";
-	$file = $path."passwd";
+	$path = "private/";
+	$file = $path."user";
 	if ($login != NULL && $passwd != NULL){
     	$op = unserialize(file_get_contents($file));
     	if ($op)

@@ -8,8 +8,8 @@
     	else
         	echo $ERROR;
 	}
-	$path = "../private/";
-	$file = $path."passwd";
+	$path = "private/";
+	$file = $path."user";
 	if ($_POST['login'] != NULL && $_POST['oldpw'] != NULL && $_POST['newpw'] != NULL && $_POST['submit'] == "OK"){
     	$passwd = unserialize(file_get_contents($file));
     	if ($passwd)
