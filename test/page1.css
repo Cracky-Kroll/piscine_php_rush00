@@ -99,6 +99,11 @@ header {
 	justify-content: space-around;
 
 }
+.items a
+{
+	display : flex;
+	justify-content: space-around;
+}
 .image
 {
 	margin: 10px;
