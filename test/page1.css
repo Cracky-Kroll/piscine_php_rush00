@@ -1,7 +1,7 @@
 
 body
 {
-    background-color: rgb(228, 185, 106);
+    background-color: #FFBF6B;
 }
 
 nav ul li
@@ -14,7 +14,7 @@ nav ul li
 nav
 {
     width: 100%;
-    background-color: #58424d;
+    background-color: #E99525;
 }
 nav ::after
 {
@@ -25,6 +25,7 @@ nav ::after
 nav a
 {
     display: inline-block;
+	text-decoration: none;
 
 }
 nav ul li a
@@ -44,6 +45,10 @@ nav li:hover .classique
     left: 0px;
     padding: 0px;
     z-index: 1000000;
+	border-top: 5px;
+	background-color: #FFB24C;
+
+
 }
 .classique li
 {
@@ -61,14 +66,14 @@ header {
 
 	width: auto;
 	height: 75px;
-	background-color: #343a40;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background: linear-gradient(#899db0, #343a40);
+	background: linear-gradient(#FFE1BA, #FFCF8F);
 	color: white;
 
 }
+
 .header
 {
 	color: white;
@@ -122,6 +127,7 @@ header {
 {
 	text-align:center;
 }
+
 /*.salade:hover
 {
     border-top: 5px;
