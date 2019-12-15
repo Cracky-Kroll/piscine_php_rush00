@@ -25,7 +25,7 @@ nav ::after
 nav a
 {
     display: inline-block;
-    
+
 }
 nav ul li a
 {
@@ -55,7 +55,69 @@ nav li:hover .classique
     font-size: 13px;
     width: 270px;
 }
-.salade:hover
+
+/* ajout justine */
+header {
+
+	width: auto;
+	height: 75px;
+	background-color: #343a40;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: linear-gradient(#899db0, #343a40);
+	color: white;
+
+}
+.header
+{
+	color: white;
+	text-align: center;
+	margin: auto;
+	margin-top: -30px;
+	font-size: 40px;
+}
+
+.produits
+{
+	color: white;
+	text-align: center;
+	font-size: 20px;
+}
+
+.blockitems
+{
+	display :flex;
+	flex-wrap : wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.items
+{
+	display : flex;
+	justify-content: space-around;
+
+}
+.image
+{
+	margin: 10px;
+}
+.loginform
+{
+	text-align:center;
+}
+
+.submitbutton
+{
+	margin-top: 15px;
+}
+
+.loginout
+{
+	text-align:center;
+}
+/*.salade:hover
 {
     border-top: 5px;
     background-color: #4e0352;
@@ -74,7 +136,7 @@ nav li:hover .classique
 {
     border-top: 5px;
     background-color:#522323 ;
-    
+
 }
 .dessert:hover
 {
@@ -105,7 +167,7 @@ nav ul li:hover a
 {
     background-color: #220233;
 }
-.classique li:hover a 
+.classique li:hover a
 {
     color:#EEE;
     font-weight: bold;
@@ -125,4 +187,4 @@ nav ul li:hover a
 .pizza .classique li:hover
 {
     background-color: #522323;
-}
+}*/
