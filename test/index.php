@@ -13,7 +13,8 @@ include "cleancache.php";
 		
 body
 {
-    background-color: #FFBF6B;
+	background-color: #FFBF6B;
+	width: auto;
 }
 
 nav ul li
@@ -106,8 +107,8 @@ header {
 {
 	display :flex;
 	flex-wrap : wrap;
-	justify-content: space-around;
-	align-content: space-around;
+	align-items: stretch;
+
 }
 
 .items
@@ -140,79 +141,32 @@ header {
 	text-align:center;
 }
 
-/*.salade:hover
+.products-container
 {
-    border-top: 5px;
-    background-color: #4e0352;
-}
-.sandwich:hover
-{
-    border-top: 5px ;
-    background-color:#7d0053;
-}
-.chauds:hover
-{
-    border-top: 5px ;
-    background-color: #074955;
-}
-.pizza:hover
-{
-    border-top: 5px;
-    background-color:#522323 ;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 1vw auto;
+    text-align: center;
 
 }
-.dessert:hover
-{
-    border-top: 5px;
-    background-color: #220233;
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
 }
-nav ul li:hover a
-{
-    padding: 15px 30px 20px 30px;
+.bouton-prix{
+	display: flex;
+	flex-direction: column;
 }
-.salade .classique
-{
-    background-color: #4e0352;
+.post{
+	display: flex;
+	justify-content: center;
 }
-.sandwich .classique
-{
-    background-color: #7d0053;
-}
-.chauds .classique
-{
-    background-color:#078c9e;
-}
-.pizza .classique
-{
-    background-color:#752641;
-}
-.dessert .classique
-{
-    background-color: #220233;
-}
-.classique li:hover a
-{
-    color:#EEE;
-    font-weight: bold;
-}
-.salade .classique li:hover
-{
-    background-color: #743213;
-}
-.sandwich .classique li:hover
-{
-    background-color: #014b70;
-}
-.chauds .classique li:hover
-{
-    background-color: #74632d;
-}
-.pizza .classique li:hover
-{
-    background-color: #522323;
-}*/
-
-		
+	
 		</style>
         <title>Nom Site</title>
     </head>
@@ -228,7 +182,7 @@ nav ul li:hover a
                 </li>
 				<li class="produit"><a>Produits</a>
                     <ul class="classique">
-                            <li><a href="sweat.html">Sweat</a></li>
+                            <li><a href="sweat.php">Sweat</a></li>
                             <li><a href="top.html">Top</a></li>
                             <li><a href="gourde.html">Gourde</a></li>
                     </ul>
@@ -253,7 +207,7 @@ nav ul li:hover a
 		</div>
 		<div class="blockitems">
 				<div class="items">
-					<a href="sweat.html"><img class="image" src="https://lp2.hm.com/hmgoepprod?set=source[/cf/62/cf626d097894be598944f3aba2d4b2662f7b4241.jpg],origin[dam],category[ladies_cardigansjumpers_hoodiessweatshirts],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]" alt=""></a>
+					<a href="sweat.php"><img class="image" src="https://lp2.hm.com/hmgoepprod?set=source[/cf/62/cf626d097894be598944f3aba2d4b2662f7b4241.jpg],origin[dam],category[ladies_cardigansjumpers_hoodiessweatshirts],type[DESCRIPTIVESTILLLIFE],res[m],hmver[1]&call=url[file:/product/main]" alt=""></a>
 				</div>
 				<div class="items">
 					<a href="top.html"><img class="image" src="https://lp2.hm.com/hmgoepprod?set=source[/38/70/3870a87c0107e924fdb23ad2532b72d19492c124.jpg],origin[dam],category[ladies_tops_vests],type[DESCRIPTIVESTILLLIFE],res[w],hmver[1]&call=url[file:/product/main]" alt=""></a>
@@ -265,15 +219,5 @@ nav ul li:hover a
 
 		<hr>
 	<p style="font-style:italic; text-align:right; font-family:monospace;">©ccarole & weilin 2019</p>
-	<?php
-	include("product.php");
-	if ($_GET["catg"])
-		disp_products($_GET["GOURDE"]);
-	else {
-		disp_products("SWEAT");
-		disp_products("TOP");
-	}
-	?>
-
-    </body>
+	  </body>
 </html>
