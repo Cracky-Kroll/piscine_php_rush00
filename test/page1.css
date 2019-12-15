@@ -1,7 +1,7 @@
 
 body
 {
-    background-color: #FFBF6B;
+    background-color: rgb(166, 171, 221);
 }
 
 nav ul li
@@ -9,12 +9,13 @@ nav ul li
     float:left;
     position:relative;
     list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav
 {
     width: 100%;
-    background-color: #E99525;
+    background-color: rgb(62, 97, 192);
 }
 nav ::after
 {
@@ -46,7 +47,7 @@ nav li:hover .classique
     padding: 0px;
     z-index: 1000000;
 	border-top: 5px;
-	background-color: #FFB24C;
+	background-color: rgba(76, 118, 255, 0.664);
 
 
 }
@@ -69,7 +70,7 @@ header {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	background: linear-gradient(#FFE1BA, #FFCF8F);
+	background:rgba(76, 118, 255, 0.664);
 	color: white;
 
 }
@@ -80,14 +81,16 @@ header {
 	text-align: center;
 	margin: auto;
 	margin-top: -30px;
-	font-size: 40px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .produits
 {
 	color: white;
 	text-align: center;
-	font-size: 20px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .blockitems
@@ -115,7 +118,8 @@ header {
 }
 .loginform
 {
-	text-align:center;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .submitbutton
@@ -125,5 +129,6 @@ header {
 
 .loginout
 {
-	text-align:center;
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
 }
