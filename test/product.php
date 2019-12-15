@@ -2,7 +2,7 @@
 
 function get_products()
 {
-    $fd = fopen("files/stock.csv", "r");
+    $fd = fopen("files/stocksweat.csv", "r");
     if ($fd != NULL)
     {
         $data = array();
